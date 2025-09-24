@@ -36,14 +36,14 @@ function Section2({add}:Props) {
   whileInView="animate"
   transition={{ duration: 0.5 }}
   viewport={{amount: 0.2 }} 
-   className="md:p-3 lg:p-4 w-full mx-auto">
-      <div className="flex flex-col mt-4 gap-3">
+   className="  mb-2  w-full mx-auto">
+      <div className="flex w-[90%] md:w-full flex-col mt-4 gap-3">
         {show.map((items) => (
           <div
             key={items.id}
             className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 rounded-md bg-gray-800 text-white gap-4 shadow-md"
           >
-            <div className="flex items-center gap-3 w-full sm:w-auto">
+            <div className="flex items-center gap-3 w-[90%] md:w-full">
               <img
                 src={items.image}
                 alt={items.name}

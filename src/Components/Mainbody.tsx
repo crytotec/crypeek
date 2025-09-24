@@ -23,11 +23,12 @@ function Mainbody({ add, setAdd }: Props) {
 
 
   return (
-    <div className="flex flex-col justify-center bg-[#191d20] mx-auto h-auto md:w-[98%] w-[100%] p-4 border">
+    <div className="mx-auto bg-[#191d20] md:p-4  h-auto w-[98%]  border">
+      <div className="md:mx-auto mr-5">
       <Section1 add={add} setAdd={setAdd} />
       <Section2 add={add} />
 
-      <div className="flex flex-col lg:flex-row justify-between p-3 gap-4 mx-auto w-[100%]">
+      <div className="flex flex-col lg:flex-row justify-between md:p-3 gap-4 mx-auto w-[100%]">
         <Section3 add={add} setAdd={setAdd} />
 
         <div className="flex flex-col gap-5 w-[100%]">
@@ -42,6 +43,7 @@ function Mainbody({ add, setAdd }: Props) {
       <Section7 />
       <Section8 />
       <Section9 />
+      </div>
     </div>
   );
 }

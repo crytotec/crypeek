@@ -16,18 +16,18 @@ import { fadeup, fadein } from "../Components/Motion";
 import { Textview } from "./Textview";
 
 function Section5() {
-  const view=Textview()
+  const view = Textview();
   const data = useSelector((state: RootState) => state.coins.coins);
 
-
   return (
-    <motion.div 
-    variants={view ? fadeup : fadein}
-    initial="initial"
-     whileInView="animate"
-    transition={{ duration: 0.5 }}
-    viewport={{amount: 0.2 }} 
-    className="h-[250px] w-[90%] md:w-full flex-2 bg-gray-800 rounded-lg p-4 shadow-md">
+    <motion.div
+      variants={view ? fadeup : fadein}
+      initial="initial"
+      whileInView="animate"
+      transition={{ duration: 0.5 }}
+      viewport={{ amount: 0.2 }}
+      className="w-[90%] md:w-full h-[300px]  md:h-[400px] bg-gray-800 rounded-lg md:p-4 shadow-md "
+    >
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           data={data}
@@ -57,7 +57,7 @@ function Section5() {
           <Line
             type="monotone"
             dataKey="current_price"
-            stroke="#3b82f6" // Tailwind blue-500
+            stroke="#3b82f6"
             strokeWidth={2}
             name="Coin Price"
             dot={{ r: 3 }}
