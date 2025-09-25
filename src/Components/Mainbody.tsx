@@ -28,10 +28,10 @@ function Mainbody({ add, setAdd }: Props) {
       <Section1 add={add} setAdd={setAdd} />
       <Section2 add={add} />
 
-      <div className="flex flex-col lg:flex-row justify-between md:p-3 gap-4 mx-auto w-[100%]">
+      <div className="flex flex-col lg:flex-row justify-between md:p-3 gap-4 mx-auto">
         <Section3 add={add} setAdd={setAdd} />
 
-        <div className="flex flex-col gap-5 w-[100%]">
+        <div className="flex flex-col gap-5 w-full">
           <Section4 add={add} />
           <Section5 />
         </div>
